@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agenda do ...</title>
+        <h1> Marque/confirme aqui seu horário </h1>
+        <style>.formulario { 
+
+            width:500px; 
+            overflow:hidden; 
+            margin: auto; 
+            background:#fff; 
+            box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+            border-radius:3px; padding:1em; 
+        
+        }
+        
+        .formulario label {
+        
+            width:100%;
+            float:left;  
+            margin-bottom:10px; 
+        
+        }
+        
+        .formulario label span {
+        
+            font-size:1em;
+            color: #17badf;
+            float:left;
+            margin-bottom:5px;  
+            font-family: 'open_sansregular';
+        
+        }
+        
+        .formulario .campo {
+        
+            font-size: 0.9em;
+            color: #555;
+            font-family: 'open_sansregular';
+            outline: none;
+            border: 1px #dee5ed solid;
+            border-radius: 4px;
+            padding: 0.5em 0.7em;
+            transition:.5s; 
+        
+        }
+        
+        .formulario .campo:focus { 
+        
+            box-shadow:0 0 5px 0px rgb(178,216,231); 
+            border:1px rgb(37,174,230) solid; 
+            color:rgb(37,174,230); 
+        
+        }
+
+        #menu {
+         	background: #CC189C;
+	        background: linear-gradient(to bottom,  #8221CC,  #FF99CC);
+	        color: #FFF;
+	        height: 51px;
+	        padding-left: 18px;
+	        border-radius: 20px;
+	        border: 6px inset #2B73F0;
+        }
+        #menu ul, #menu li {
+	        margin: 0 auto;
+	        padding: 0;
+	        list-style: none
+        }
+        #menu ul {
+	width: 100%;
+        }
+        #menu li {
+	float: left;
+	display: inline;
+	position: relative;
+        }
+        #menu a {
+	display: block;
+	line-height: 39px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+	text-transform: capitalize;
+        }
+        #menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+        }
+        #menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+        }
+        #menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 51px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+        }
+        #menu label {
+	display: none;
+	line-height: 39px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+        }
+        #menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+        }
+        #menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #E815D3;
+	position: absolute;
+	z-index: 99;
+	display: none;
+        }
+        #menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+        }
+        #menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 12px;
+	text-transform: capitalize;
+        }
+        #menu li:hover ul.sub-menus {
+	display: block
+        }
+        #menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+        }
+        @media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+        }
+
+        </style>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href='index.html'>Inicio</a></li>
+              <li><a class='dropdown-arrow' href='http://'>Agendamento</a>
+              </li>
+              <li><a class='dropdown-arrow'>Entre em contato</a>
+                <ul class='sub-menus'>
+                  <li><a href='http://'>Instagram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    </head>
+    <body>
+        <form class="formulario">
+    
+            <label>  
+                
+                <span class="icon icon-phone"> Telefone</span>    
+                <input name="telefone" id="telefone" class="campo" type="text" placeholder="(21) 0000-0000">
+            
+            </label>
+        
+            <label>  
+                
+                <span class="icon icon-whatsapp-1"> Whatsapp</span>    
+                <input name="whatsapp" id="whatsapp" class="campo" type="text" placeholder="(21) 90000-0000">
+            
+            </label>
+        
+            <label>  
+                
+                <span class="icon icon-calendar"> Data</span>    
+                <input name="data" id="data" class="campo" type="text" placeholder="00/00/0000">
+            
+            </label>
+        
+            <label>  
+                
+                <span class="icon icon-clock"> Hora</span>    
+                <input name="hora" id="hora" class="campo" type="text" placeholder="00:00">
+            
+            </label>
+        
+        </form>
+    </body>
+    <footer>
+        <a style="background-image: url(https://i.ibb.co/RvTJC4r/whatsapp.png); border-radius: 34px;width: 60px; font-size: 0; height: 60px;position: fixed;right: 10px;z-index: 999;display: block;bottom: 10px;background-size: 73%;background-repeat: no-repeat;background-color: #1bd741;background-position: center;" target="_blank" href="https://wa.me/5571982073356?text=Ol%C3%A1%2C%20quero%20confirmar%20meu%20atendimento!">Whatsapp</a>
+    </footer>
+</html>

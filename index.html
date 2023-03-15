@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+        <title>Agenda do ...</title>
+        <h1> Marque/confirme aqui seu horário </h1>
+        <style>.formulario { 
+
+            width:500px; 
+            overflow:hidden; 
+            margin: auto; 
+            background:#fff; 
+            box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+            border-radius:3px; padding:1em; 
+        
+        }
+        
+        .formulario label {
+        
+            width:100%;
+            float:left;  
+            margin-bottom:10px; 
+        
+        }
+        
+        .formulario label span {
+        
+            font-size:1em;
+            color: #17badf;
+            float:left;
+            margin-bottom:5px;  
+            font-family: 'open_sansregular';
+        
+        }
+        
+        .formulario .campo {
+        
+            font-size: 0.9em;
+            color: #555;
+            font-family: 'open_sansregular';
+            outline: none;
+            border: 1px #dee5ed solid;
+            border-radius: 4px;
+            padding: 0.5em 0.7em;
+            transition:.5s; 
+        
+        }
+        
+        .formulario .campo:focus { 
+        
+            box-shadow:0 0 5px 0px rgb(178,216,231); 
+            border:1px rgb(37,174,230) solid; 
+            color:rgb(37,174,230); 
+        
+        }
+
+        #menu {
+         	background: #CC189C;
+	        background: linear-gradient(to bottom,  #8221CC,  #FF99CC);
+	        color: #FFF;
+	        height: 51px;
+	        padding-left: 18px;
+	        border-radius: 20px;
+	        border: 6px inset #2B73F0;
+        }
+        #menu ul, #menu li {
+	        margin: 0 auto;
+	        padding: 0;
+	        list-style: none
+        }
+        #menu ul {
+	width: 100%;
+        }
+        #menu li {
+	float: left;
+	display: inline;
+	position: relative;
+        }
+        #menu a {
+	display: block;
+	line-height: 39px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+	text-transform: capitalize;
+        }
+        #menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+        }
+        #menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+        }
+        #menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 51px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+        }
+        #menu label {
+	display: none;
+	line-height: 39px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+        }
+        #menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+        }
+        #menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #E815D3;
+	position: absolute;
+	z-index: 99;
+	display: none;
+        }
+        #menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+        }
+        #menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 12px;
+	text-transform: capitalize;
+        }
+        #menu li:hover ul.sub-menus {
+	display: block
+        }
+        #menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+        }
+        @media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+        }
+        element.style {
+            display: block;
+            margin: auto;
+            background-color: hsl(0, 0%, 90%);
+            transition: background-color 300ms;
+        }
+
+        img{     
+            overflow-clip-margin: context-box;
+            overflow: clip;
+
+        }
+
+        
+        </style>
+
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href='index.html'>Inicio</a></li>
+              <li><a class='dropdown-arrow' href='agendamento.html'>Agendamento</a>
+              </li>
+              <li><a class='dropdown-arrow'>Entre em contato</a>
+                <ul class='sub-menus'>
+                  <li><a href='http://'>Instagram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    </head>
+    <body>
+        <div data-mc-cmp-id="mission-control-components-f40f6556-2fdb-4593-b4d8-793e79b7404f" 
+        data-mc-cmp="instagram-h-instagram-grid-grid" data-mc-version="0.107.2" data-mc-type="grid" data-mc-loaded="true">
+        <div class="ic">
+            <div dir="ltr">
+                <div class="css-16zs1q6">
+                    <div class="css-qvb9vo">
+                        <a target="_blank" rel="noreferrer noopener" href="https://instagram.com/maari_naildesigner" class="wx-title-image-container css-1220633">
+                        <img src="https://api.woxo.tech/instagram/userpicture?source=@maari_naildesigner" class="wx-title-image css-11yydpy" alt="">
+                        </a>
+                        <h2 class="wx-title css-1g6ezso">Ultimas atualizações</h2>
+                    </div>
+                <div class="css-1uh1px4">
+                <div class="css-cuu57i">
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CoufZucL99S/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F331319679_3255078651470088_1939089500337064979_n.jpg%3Fstp%3Dc0.124.320.320a_dst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DWtztyknYmIEAX-5gcNG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDnCyeSMY9XM8cgfWQhPyO8DGZZB6cKMWvwMvjAjgYaFA%26oe%3D64136741%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F331319679_3255078651470088_1939089500337064979_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DWtztyknYmIEAX-5gcNG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCtDOD6t683FM2BGtRMHwr9xhqDhTHALU1C4z3FEjN3Ig%26oe%3D64136741%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F331319679_3255078651470088_1939089500337064979_n.jpg%3Fstp%3Dc0.124.320.320a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DWtztyknYmIEAX-5gcNG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDdZ_w3E029dPX51wYe8i2n5p4z6Ri4RueVYinGJZVAwg%26oe%3D64136741%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F331319679_3255078651470088_1939089500337064979_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DWtztyknYmIEAX-5gcNG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCtDOD6t683FM2BGtRMHwr9xhqDhTHALU1C4z3FEjN3Ig%26oe%3D64136741%26_nc_sid%3D86f79a 320w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F331319679_3255078651470088_1939089500337064979_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DWtztyknYmIEAX-5gcNG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCtDOD6t683FM2BGtRMHwr9xhqDhTHALU1C4z3FEjN3Ig%26oe%3D64136741%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CoSnT-8pyiJ/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F329628592_663635212227129_7273122580060473431_n.webp%3Fstp%3Ddst-jpg_e35_s320x320%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DGbP78KPMfQoAX8sZDDo%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBPjn0jrWbOIecnIok5-q_nNchpgVPKzjeYrCJijuK6YA%26oe%3D64167495%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F329628592_663635212227129_7273122580060473431_n.webp%3Fstp%3Ddst-jpg_e35_s640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DGbP78KPMfQoAX8sZDDo%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfC_Kd7vEhy5t3jVWLZlHRwK5NXBN18xHMWroZGGyfz4ow%26oe%3D64167495%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F329628592_663635212227129_7273122580060473431_n.webp%3Fstp%3Ddst-jpg_e35_s150x150%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DGbP78KPMfQoAX8sZDDo%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAzthN4gkK6_JvGEaRa_vgxeURdrcRaSOd8lO-GUZbwwg%26oe%3D64167495%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F329628592_663635212227129_7273122580060473431_n.webp%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DGbP78KPMfQoAX8sZDDo%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA21cWtUMiGsiyLdAmjGzUzWNri5JyNetTHuRgiCJfXlA%26oe%3D64167495%26_nc_sid%3D86f79a 750w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F329628592_663635212227129_7273122580060473431_n.webp%3Fstp%3Ddst-jpg_e35_s640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DGbP78KPMfQoAX8sZDDo%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfC_Kd7vEhy5t3jVWLZlHRwK5NXBN18xHMWroZGGyfz4ow%26oe%3D64167495%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CoNkiEVJ8ja/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F328683721_841960806900618_6353437262317336754_n.jpg%3Fstp%3Dc0.124.320.320a_dst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DLtKYcA1IKrsAX95IXX_%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCXl2GOjS4LZhgRh-uZY6xN8sLKwJvnHm0MalmCD_ZvXw%26oe%3D64137F3C%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F328683721_841960806900618_6353437262317336754_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DLtKYcA1IKrsAX95IXX_%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCQksoRQCCpPVXZd6tMuUcUxfqLVEaSTSclQfaZl3Lscg%26oe%3D64137F3C%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F328683721_841960806900618_6353437262317336754_n.jpg%3Fstp%3Dc0.124.320.320a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DLtKYcA1IKrsAX95IXX_%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfB0qwyHYqOt0sw8DbuzMK2ABbweKjBBMI20VyPTvJxq2Q%26oe%3D64137F3C%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F328683721_841960806900618_6353437262317336754_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DLtKYcA1IKrsAX95IXX_%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCQksoRQCCpPVXZd6tMuUcUxfqLVEaSTSclQfaZl3Lscg%26oe%3D64137F3C%26_nc_sid%3D86f79a 320w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F328683721_841960806900618_6353437262317336754_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DLtKYcA1IKrsAX95IXX_%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCQksoRQCCpPVXZd6tMuUcUxfqLVEaSTSclQfaZl3Lscg%26oe%3D64137F3C%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CnaYCmUOFyl/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F324934434_835308181033411_6765925098172005087_n.jpg%3Fstp%3Dc0.184.480.480a_dst-jpg_e15_s320x320%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DxAF4tJc1PEgAX9eLnbS%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCZM7KlBryVnL_bXbj-vlM-dsNVNg57vtsEZRz-Z83HRg%26oe%3D64136D81%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F324934434_835308181033411_6765925098172005087_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DxAF4tJc1PEgAX9eLnbS%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA_NU3mlV42Bj7svOxB1kaYIzHFdl8f_Ft6Z-h7yoehrw%26oe%3D64136D81%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F324934434_835308181033411_6765925098172005087_n.jpg%3Fstp%3Dc0.184.480.480a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DxAF4tJc1PEgAX9eLnbS%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDBZC4RNEicV2PVdGpBhUeYBR9szo0HUncpvnMHvNEZkA%26oe%3D64136D81%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F324934434_835308181033411_6765925098172005087_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DxAF4tJc1PEgAX9eLnbS%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA_NU3mlV42Bj7svOxB1kaYIzHFdl8f_Ft6Z-h7yoehrw%26oe%3D64136D81%26_nc_sid%3D86f79a 480w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F324934434_835308181033411_6765925098172005087_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DxAF4tJc1PEgAX9eLnbS%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA_NU3mlV42Bj7svOxB1kaYIzHFdl8f_Ft6Z-h7yoehrw%26oe%3D64136D81%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CnaI2nqJtMA/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div
+                                        div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F325570534_855979125657885_7137796679440170641_n.webp%3Fstp%3Dc0.135.1080.1080a_dst-jpg_e35_s320x320%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DepbV9KOyACUAX_2bP87%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAsNy-HEPqypFmUmur8gkeaHkAlzOcbPzVkJJw34iz5wg%26oe%3D641700DE%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F325570534_855979125657885_7137796679440170641_n.webp%3Fstp%3Ddst-jpg_e35_p640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DepbV9KOyACUAX_2bP87%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBu1Pd6AL816umPwOBAyt51JXJt9KvnNRbUc-5Y2xlJHA%26oe%3D641700DE%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F325570534_855979125657885_7137796679440170641_n.webp%3Fstp%3Dc0.135.1080.1080a_dst-jpg_e35_s150x150%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DepbV9KOyACUAX_2bP87%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfB01736xp0-VX0qtzPanCEbRae2EqvBebklsVQI41SdHQ%26oe%3D641700DE%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F325570534_855979125657885_7137796679440170641_n.webp%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DepbV9KOyACUAX_2bP87%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDjt6ijnDHYHq7tu1eJtS3b0xXrccW3ZC7I9jEFmDK_pQ%26oe%3D641700DE%26_nc_sid%3D86f79a 1080w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F325570534_855979125657885_7137796679440170641_n.webp%3Fstp%3Ddst-jpg_e35_p640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D109%26_nc_ohc%3DepbV9KOyACUAX_2bP87%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBu1Pd6AL816umPwOBAyt51JXJt9KvnNRbUc-5Y2xlJHA%26oe%3D641700DE%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/Cm1cO-vOT_3/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F323117260_675960460855579_94944983157569620_n.jpg%3Fstp%3Dc0.280.720.720a_dst-jpg_e15_s320x320%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DlLEIjHsTgCAAX-3mlp8%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAZKMwl7TnUhPFy0-QBhO3946VCFDr95LeJCAHo1cTF5g%26oe%3D6413566F%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F323117260_675960460855579_94944983157569620_n.jpg%3Fstp%3Ddst-jpg_e15_p640x640%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DlLEIjHsTgCAAX-3mlp8%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA0xbU9JYoVe1qGMQLBCSyxUIBz50N0-IoyBbyMGde9YQ%26oe%3D6413566F%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F323117260_675960460855579_94944983157569620_n.jpg%3Fstp%3Dc0.280.720.720a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DlLEIjHsTgCAAX-3mlp8%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBA4rkses91XsI832eMo01yLPFFNMZ_cs4nXMz3sJGbAQ%26oe%3D6413566F%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F323117260_675960460855579_94944983157569620_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DlLEIjHsTgCAAX-3mlp8%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAVWWmvUi8k8TnzkSKk_txL5K7u0ct_N94IDNLdMkjdlg%26oe%3D6413566F%26_nc_sid%3D86f79a 750w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F323117260_675960460855579_94944983157569620_n.jpg%3Fstp%3Ddst-jpg_e15_p640x640%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3DlLEIjHsTgCAAX-3mlp8%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfA0xbU9JYoVe1qGMQLBCSyxUIBz50N0-IoyBbyMGde9YQ%26oe%3D6413566F%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CmhDM9gsVbV/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321544710_209890974771339_8496538859137141115_n.jpg%3Fstp%3Dc0.187.480.480a_dst-jpg_e15_s320x320%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D103%26_nc_ohc%3DuvG8eMSXy7YAX85EqJO%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCNihPIOKOlhE-HsntCr_cT4bJ6owiiRxxue8XDwBBFlQ%26oe%3D6413BB0F%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321544710_209890974771339_8496538859137141115_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D103%26_nc_ohc%3DuvG8eMSXy7YAX85EqJO%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfC9Cs0wWhFqo6F1W6LIVzcibRb9wbd5iaOekCTmF6eH_Q%26oe%3D6413BB0F%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321544710_209890974771339_8496538859137141115_n.jpg%3Fstp%3Dc0.187.480.480a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D103%26_nc_ohc%3DuvG8eMSXy7YAX85EqJO%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDFpVWpSdILWTg6yYXQS9kCkQu5oR5drSHcfnyeKZm5mA%26oe%3D6413BB0F%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321544710_209890974771339_8496538859137141115_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D103%26_nc_ohc%3DuvG8eMSXy7YAX85EqJO%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfC9Cs0wWhFqo6F1W6LIVzcibRb9wbd5iaOekCTmF6eH_Q%26oe%3D6413BB0F%26_nc_sid%3D86f79a 480w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321544710_209890974771339_8496538859137141115_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D103%26_nc_ohc%3DuvG8eMSXy7YAX85EqJO%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfC9Cs0wWhFqo6F1W6LIVzcibRb9wbd5iaOekCTmF6eH_Q%26oe%3D6413BB0F%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CmehC3KM2Jd/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321164768_474660257946312_8297516437240818121_n.jpg%3Fstp%3Dc0.280.720.720a_dst-jpg_e15_s320x320%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DK24ZSwrbOvcAX-Zn1bG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBQ99mrgV0Vn2ApTeYPEf4MW6I768mf2GhNf609Cq5iew%26oe%3D6413C5B1%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321164768_474660257946312_8297516437240818121_n.jpg%3Fstp%3Ddst-jpg_e15_p640x640%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DK24ZSwrbOvcAX-Zn1bG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfB1tdj7I0abjRJqcIkRhHpv9G3INDqjipkwH5LlfSUKZA%26oe%3D6413C5B1%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321164768_474660257946312_8297516437240818121_n.jpg%3Fstp%3Dc0.280.720.720a_dst-jpg_e15_s150x150%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DK24ZSwrbOvcAX-Zn1bG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAsC_w48brrHQafXutv-aV2jT2-z3fmBdqYkMfLd_WrKw%26oe%3D6413C5B1%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321164768_474660257946312_8297516437240818121_n.jpg%3Fstp%3Ddst-jpg_e15%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DK24ZSwrbOvcAX-Zn1bG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCe-l3PKWMyctz5HmEvar9PxPl3i9I1tLuJo7Zi9tcJQg%26oe%3D6413C5B1%26_nc_sid%3D86f79a 750w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F321164768_474660257946312_8297516437240818121_n.jpg%3Fstp%3Ddst-jpg_e15_p640x640%26_nc_ht%3Dinstagram.faep9-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3DK24ZSwrbOvcAX-Zn1bG%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfB1tdj7I0abjRJqcIkRhHpv9G3INDqjipkwH5LlfSUKZA%26oe%3D6413C5B1%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/Cmby6MfuyFz/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320775313_203892355441543_5973096820133408333_n.webp%3Fstp%3Ddst-jpg_e35_s320x320%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3Depldi0ZLcMEAX-Xp_nU%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfBO3UnxepcA0ISH0tOuAWpJ9L5xLDlirI4M-7NGL7x1qA%26oe%3D6416253B%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320775313_203892355441543_5973096820133408333_n.webp%3Fstp%3Ddst-jpg_e35_s640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3Depldi0ZLcMEAX-Xp_nU%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAMjgXG-oQzvC7T41-O3z4HO2neZpTANyaW_Os9RweTbQ%26oe%3D6416253B%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320775313_203892355441543_5973096820133408333_n.webp%3Fstp%3Ddst-jpg_e35_s150x150%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3Depldi0ZLcMEAX-Xp_nU%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfADuRTgJEdj9Uw_1SE2me0-swikNLjMuvvybRhhwHZ4HQ%26oe%3D6416253B%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320775313_203892355441543_5973096820133408333_n.webp%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3Depldi0ZLcMEAX-Xp_nU%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfD28x0p2yGtzoTZ_n6RkTzfFJpQoevFQdIYdjl0cdtZkQ%26oe%3D6416253B%26_nc_sid%3D86f79a 1080w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320775313_203892355441543_5973096820133408333_n.webp%3Fstp%3Ddst-jpg_e35_s640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D107%26_nc_ohc%3Depldi0ZLcMEAX-Xp_nU%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfAMjgXG-oQzvC7T41-O3z4HO2neZpTANyaW_Os9RweTbQ%26oe%3D6416253B%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div>
+                    <div tabindex="0" layout="instagram-h" data-layout-type="instagram-h" class="wx-card css-1ype2i8">
+                        <div class="css-1dt8cb">
+                            <div href="https://www.instagram.com/p/CmRiSbTO-TE/" target="_blank" class="css-6g8pe7">
+                                <div class="css-15nh63n">
+                                    <div class="css-rrewe3"></div>
+                                    <div class="css-1rxktr2">
+                                        <picture><source srcset="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320167467_1328510171238882_6519390630940839151_n.webp%3Fstp%3Dc0.99.957.957a_dst-jpg_e35_s320x320%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DeYpiXw9idjYAX9X04na%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfD5leJ5qfiSDMuehk9X5o2cEBc1aXx4daUpGxM0MYXDeg%26oe%3D641679E7%26_nc_sid%3D86f79a 320w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320167467_1328510171238882_6519390630940839151_n.webp%3Fstp%3Ddst-jpg_e35_p640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DeYpiXw9idjYAX9X04na%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCjWdyzevjr9vyH5tZuJ9QjodFSbOI6kCa6kW-FF0aFNA%26oe%3D641679E7%26_nc_sid%3D86f79a 640w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320167467_1328510171238882_6519390630940839151_n.webp%3Fstp%3Dc0.99.957.957a_dst-jpg_e35_s150x150%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DeYpiXw9idjYAX9X04na%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCFkHZDTdtMzUdzRKlBmZqkmofkKX5OylUjoqB2poIsYQ%26oe%3D641679E7%26_nc_sid%3D86f79a 150w, https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320167467_1328510171238882_6519390630940839151_n.webp%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DeYpiXw9idjYAX9X04na%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfDvgem5-4JOkmXyIO6UcaidEGRYGa8zoNzSA-BhY2FG5Q%26oe%3D641679E7%26_nc_sid%3D86f79a 1080w" sizes="54px"><img alt="" src="https://api.woxo.tech/instagram/proxy?url=https%3A%2F%2Finstagram.faep9-2.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F320167467_1328510171238882_6519390630940839151_n.webp%3Fstp%3Ddst-jpg_e35_p640x640_sh0.08%26_nc_ht%3Dinstagram.faep9-2.fna.fbcdn.net%26_nc_cat%3D106%26_nc_ohc%3DeYpiXw9idjYAX9X04na%26edm%3DAPU89FABAAAA%26ccb%3D7-5%26oh%3D00_AfCjWdyzevjr9vyH5tZuJ9QjodFSbOI6kCa6kW-FF0aFNA%26oe%3D641679E7%26_nc_sid%3D86f79a" class="fr-card-image wx-card-image css-ei501s" decoding="async"></picture></div></div></div></div></div></div>
+                                        <div class="css-4aovbb">
+                                            <div class="css-s9tt3p" style="display: flex !important; position: static !important; height: auto !important; opacity: 1 !important;">
+                                                <div class="wx-footer css-s9tt3p">
+                                                    <a target="_blank" rel="noreferrer noopener" href="https://instagram.com/maari_naildesigner" class="wx-follow-us-link css-ikjlq7">
+                                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 5px;"><path d="M17.1,1H6.9C3.7,1,1,3.7,1,6.9v10.1C1,20.3,3.7,23,6.9,23h10.1c3.3,0,5.9-2.7,5.9-5.9V6.9C23,3.7,20.3,1,17.1,1z M21.5,17.1c0,2.4-2,4.4-4.4,4.4H6.9c-2.4,0-4.4-2-4.4-4.4V6.9c0-2.4,2-4.4,4.4-4.4h10.3c2.4,0,4.4,2,4.4,4.4V17.1z"></path><path d="M16.9,11.2c-0.2-1.1-0.6-2-1.4-2.8c-0.8-0.8-1.7-1.2-2.8-1.4c-0.5-0.1-1-0.1-1.4,0C10,7.3,8.9,8,8.1,9S7,11.4,7.2,12.7 C7.4,14,8,15.1,9.1,15.9c0.9,0.6,1.9,1,2.9,1c0.2,0,0.5,0,0.7-0.1c1.3-0.2,2.5-0.9,3.2-1.9C16.8,13.8,17.1,12.5,16.9,11.2z M12.6,15.4c-0.9,0.1-1.8-0.1-2.6-0.6c-0.7-0.6-1.2-1.4-1.4-2.3c-0.1-0.9,0.1-1.8,0.6-2.6c0.6-0.7,1.4-1.2,2.3-1.4 c0.2,0,0.3,0,0.5,0s0.3,0,0.5,0c1.5,0.2,2.7,1.4,2.9,2.9C15.8,13.3,14.5,15.1,12.6,15.4z"></path><path d="M18.4,5.6c-0.2-0.2-0.4-0.3-0.6-0.3s-0.5,0.1-0.6,0.3c-0.2,0.2-0.3,0.4-0.3,0.6s0.1,0.5,0.3,0.6c0.2,0.2,0.4,0.3,0.6,0.3 s0.5-0.1,0.6-0.3c0.2-0.2,0.3-0.4,0.3-0.6C18.7,5.9,18.6,5.7,18.4,5.6z"></path></svg>
+                                                        "Follow us on Instagram"
+                                                    </a>
+                                                </div>
+                                                <a target="_top" rel="noreferrer noopener" href="https://woxo.tech/instagram-widget?utm_source=watermark&amp;utm_medium=referral&amp;utm_campaign=watermark&amp;utm_content=Free%20Widget%20by%20Woxo&amp;utm_term=instagram%20widget" aria-label="Free widget by Woxo" class="css-6kluu6" style="display: flex !important; position: static !important; height: auto !important; opacity: 1 !important; color: rgb(221, 221, 221) !important; font-size: 1.2rem !important; align-items: center; text-transform: uppercase !important; font-weight: 600 !important; font-family: sans-serif; text-decoration: none;">
+                                                    <span aria-hidden="true" class="css-lgbo0i">Free Widget by W</span>
+                                                    <svg width="20" height="20" viewBox="0 0 21.6 21.6" aria-hidden="true" style="margin-right: -0.14rem; padding-top: 0.1rem; overflow: visible; margin-bottom: 0.2rem; margin-left: -0.12rem; height: 17px;">
+                                                        <path d="M13.95 9l-3.1-1.8L7.65 9v3.6l3.2 1.8 3.1-1.8z" fill="#ffd400"></path>
+                                                        <path d="M13.95 1.8L10.85 0l-3.2 1.8v3.6l3.2 1.8 3.1-1.8z" fill="#ff0086"></path>
+                                                        <path d="M7.65 5.4l-3.1-1.8-3.1 1.8V9l3.1 1.8L7.65 9z" fill="#7c00ff"></path>
+                                                        <path d="M7.65 12.6l-3.1-1.8-3.1 1.8v3.6l3.1 1.8 3.1-1.8z" fill="#0086ff"></path>
+                                                        <path d="M13.95 16.2l-3.1-1.8-3.2 1.8v3.6l3.2 1.8 3.1-1.8z" fill="#40bf00"></path>
+                                                        <path d="M20.15 12.6l-3.1-1.8-3.1 1.8v3.6l3.1 1.8 3.1-1.8z" fill="#ff7f00"></path>
+                                                        <path d="M20.15 5.4l-3.1-1.8-3.1 1.8V9l3.1 1.8 3.1-1.8z" fill="red"></path>
+                                                    </svg>
+                                                    <span aria-hidden="true" class="css-lgbo0i">xo</span>
+                                                </a></div></div></div></div></div></div></div>
+    </body>
+    <footer>
+        <a style="background-image: url(https://i.ibb.co/RvTJC4r/whatsapp.png); border-radius: 34px;width: 60px; font-size: 0; height: 60px;position: fixed;right: 10px;z-index: 999;display: block;bottom: 10px;background-size: 73%;background-repeat: no-repeat;background-color: #1bd741;background-position: center;" target="_blank" href="https://wa.me/5571982073356?text=Ol%C3%A1%2C%20quero%20confirmar%20meu%20atendimento!">Whatsapp</a>
+    </footer>
+</html>
